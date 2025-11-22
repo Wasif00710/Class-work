@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info System</title>
+    <link rel="icon" type="image/png"
+        href="https://i.pinimg.com/originals/72/2c/57/722c5710002814308caff02ffb294c0d.png">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="heading">Student Info System</h1>
+
+        <div class="form-box">
+        <form id="studentForm">
+            
+            <label>Name</label>
+            <input type="text" id="name" maxlength="20">
+            <p id="nameCount" class="count">0/20 characters used</p>
+            
+            <label>Course</label>
+            <input type="text" id="course">
+            
+            <label>Batch</label>
+            <input type="text" id="batch">
+            <p id="batchWarning" class="warning"></p>
+            
+            <label>Email</label>
+            <div class="email-row">
+                <input type="email" id="email">
+                <span id="emailStatus"></span>
+            </div>
+            
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="button" id="clearBtn" class="clear">Clear</button>
+
+        </form>
+    </div>
+    
+    <div class="details-box">
+        <h2>Student Details</h2>
+        <div id="details" class="details"></div>       
+        <p id="successMsg" class="success"></p>
+
+    </div>
+    
+    <footer>
+        <p id="dateTime"></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
+<div class="main">
+    <div id="header"></div>
+    <p class="paragraph"></p>
+    <div id="footer"></div>
+</div>
+<!--.main>#header+p.paragraph+#footer-->
